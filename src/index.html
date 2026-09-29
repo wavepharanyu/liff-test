@@ -71,7 +71,7 @@
             message: message.value,
           };
           console.log("data", data);
-          const response = await axios.post("https://da2a-27-130-85-82.ngrok-free.app", data);
+          const response = await axios.post("https://da2a-27-130-85-82.ngrok-free.app/send-message", data);
           console.log("response", response.data);
         } catch (error) {
           const msg = error.response?.data?.error ?? error.message;
